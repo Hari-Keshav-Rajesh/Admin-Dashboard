@@ -1,0 +1,105 @@
+img{
+    height:3vh;
+    width:3vh;
+}
+
+body{
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 4fr;
+}
+
+.header{
+    grid-area:1/2/2/3;
+    display: flex;
+    flex-direction: column;
+    gap:5vh;
+}
+
+.header > .top{
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 2fr 1fr;
+}
+
+.searchbar{
+    grid-area: 1/1/2/2;
+    display: flex; 
+    justify-content: center;
+    gap:1vh;
+}
+
+#bar{
+    width:70vh;
+    border-radius: 4vh;
+    background-color: lightgray;
+}
+
+.header > .top > .right{
+    grid-area: 1/2/2/3;
+    display: flex;
+    justify-content: space-evenly;
+    font-size:2vh
+}
+
+.header > .bottom{
+    display: flex;
+    justify-content: space-between;
+}
+
+.header > .bottom > .left{
+    display: flex;
+    gap: 5vh;
+    font-size:2vh;
+}
+
+.header > .bottom > .right{
+    display: flex;
+    gap: 20vh;
+}
+
+.header > .bottom > .right button{
+    font-weight: bold;
+    color: wheat;
+    font-size: 2vh;
+    background-color: rgb(64, 86, 255);
+    width: 10vh;
+    height: 4vh;
+    border-radius: 3vh;
+}
+
+.sidebar{
+    grid-area: 1/1/3/2;
+    background-color:  rgb(58, 76, 213);
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.dash,.home,.profile,.messages,.history,.tasks,.communities,.settings,.support,.privacy{
+    display: flex;
+    color:white;
+    font-size: 3vh;
+    position: relative;
+    left:3vh;
+    gap:2vh;
+}
+
+.sidetitle{
+    font-size: 5vh;
+}
+
+.dash-icon{
+    height: 5vh;
+    width: 5vh;
+}
+
+.top{
+    display: flex;
+   flex-direction: column;
+   gap:2vh
+}
+
+
+
