@@ -74,7 +74,7 @@ body{
     display: flex;
     justify-content: space-around;
     flex-direction: column;
-    height: 100vh;
+    height: 110vh;
 }
 
 .dash,.home,.profile,.messages,.history,.tasks,.communities,.settings,.support,.privacy{
@@ -98,8 +98,118 @@ body{
 .top{
     display: flex;
    flex-direction: column;
-   gap:2vh
+   gap:2vh;
+}
+
+.main{
+    background-color: rgb(236, 238, 240);
+    grid-area:2/2/3/3;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 3fr 1fr;
+}
+
+.Projects{
+    grid-area: 1/1/3/2;
+    display: flex;
+    flex-direction: column;
+    gap:4vh;
+}
+
+.Projects > .caption{
+    font-size: 4vh;
+    font-weight: bold;
+}
+
+.Projects > .list{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(3,1fr);
+    gap:3vh;
+}
+
+.Projects > .list > .project{
+    background-color: white;
+    height:20vh;
+    width:30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    position: relative;
+    left: 5vh;
+    border-style: groove;
+    border-color: chocolate;
+    border-width: 1vh;
+}
+
+.Projects > .list > .project > .title{
+    font-size: 3vh;
+    font-weight: bold;
+}
+
+.Announcements{
+    grid-area: 1/2/2/3;
+    display: flex;
+    flex-direction: column;
+    gap:4vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.Announcements > .caption{
+    font-size: 4vh;
+    font-weight: bold;
+    align-items: flex-start;
+}
+
+.Announcements >.announcements{
+    display: flex;
+    flex-direction: column;
+    gap:2vh;
+    background-color: white;
+}
+
+.Announcements > .announcements > .content{
+    border-color: chocolate;
+    border-style: groove;
+}
+
+.Announcements > .announcements > .content > .title{
+    font-size: 3vh;
+    font-weight: bold;
+}
+
+.Trending{
+    grid-area: 2/2/3/3;
+    display: flex;
+    flex-direction: column;
+    gap:3vh;
+}
+
+.Trending > .caption{
+    font-size: 4vh;
+    font-weight: bold;
+}
+
+.Trending > .trending{
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap:3vh;
 }
 
 
+.Trending > .trending > .content{
+    display: flex;    
+    border-style: groove;
+    border-color: chocolate;
+}
 
+.Trending > .trending > .content > .text > .username{
+    font-size: 3vh;
+}
+
+.subtext{
+    font-size: 2vh;
+}
